@@ -8,24 +8,30 @@
 
 @media (min-width: $sm) {
   .container {
-    max-width: 540px;
+    max-width: 640px;
   }
 }
 
 @media (min-width: $md) {
   .container {
-    max-width: 720px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: $lg) {
   .container {
-    max-width: 920px;
+    max-width: 1024px;
   }
 }
 
 @media (min-width: $xl) {
   .container {
-    max-width: 1140px;
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: $xxl) {
+  .container {
+    max-width: 1536px;
   }
 }

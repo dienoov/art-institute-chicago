@@ -1,8 +1,8 @@
 nav-bar {
+  @extend %moderat-regular;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: Moderat, sans-serif;
 
   a {
     text-decoration: none;
@@ -13,6 +13,7 @@ nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1280px;
   }
 
   .logo {

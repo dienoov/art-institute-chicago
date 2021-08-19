@@ -1,9 +1,11 @@
 $sm: 576px;
 $md: 768px;
-$lg: 992px;
-$xl: 1200px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
 
 $black: #231f20;
+$yellow: #f4b63e;
 
 @font-face {
   font-family: Moderat;
@@ -14,4 +16,37 @@ $black: #231f20;
   font-family: Moderat;
   font-weight: 700;
   src: url("../fonts/Moderat-Bold.woff");
+}
+
+@font-face {
+  font-family: Ogg;
+  font-style: italic;
+  src: url("../fonts/Ogg-Italic.woff");
+}
+
+@font-face {
+  font-family: Butler;
+  font-weight: 700;
+  src: url("../fonts/Butler-Bold.woff");
+}
+
+%moderat-regular {
+  font-family: Moderat, sans-serif;
+  font-weight: 400;
+}
+
+%moderat-bold {
+  font-family: Moderat, sans-serif;
+  font-weight: 700;
+}
+
+%ogg-italic {
+  font-family: Ogg, serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+%butler-bold {
+  font-family: Butler, sans-serif;
+  font-weight: 700;
 }
