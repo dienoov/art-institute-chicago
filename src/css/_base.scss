@@ -1,0 +1,17 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+$black: #231f20;
+
+@font-face {
+  font-family: Moderat;
+  src: url("../fonts/Moderat-Regular.woff");
+}
+
+@font-face {
+  font-family: Moderat;
+  font-weight: 700;
+  src: url("../fonts/Moderat-Bold.woff");
+}

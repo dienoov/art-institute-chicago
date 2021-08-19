@@ -17,12 +17,17 @@ module.exports = {
         test: /\.s[ac]ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
+        type: 'asset/resource',
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.pug',
       filename: 'index.html',
+      favicon: './src/images/logo.svg',
     }),
   ],
 };
