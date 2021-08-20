@@ -25,7 +25,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.pug',
+      template: './src/views/index.pug',
       filename: 'index.html',
       favicon: './src/images/logo.svg',
     }),

@@ -1,0 +1,98 @@
+latest-exhibitions {
+  display: block;
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+  h2 {
+    font-size: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 2rem;
+
+    @media (max-width: $md) {
+      font-size: 6rem;
+    }
+
+    @media (max-width: $sm) {
+      font-size: 3rem;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: $xl;
+    padding-right: 0;
+    padding-left: 0;
+    white-space: nowrap;
+
+    @media (max-width: $md) {
+      overflow-x: scroll;
+      padding-bottom: 2rem;
+    }
+  }
+
+  .card {
+    margin-right: 25px;
+    margin-left: 25px;
+    padding: 25px;
+    flex-grow: 1;
+    flex-basis: 0;
+    white-space: normal;
+
+    @media (max-width: $md) {
+      min-width: 350px;
+    }
+
+    @media (max-width: $sm) {
+      min-width: 300px;
+    }
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+
+      @media (max-width: $sm) {
+        height: 200px;
+      }
+    }
+
+    h3 {
+      @extend %moderat-regular;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .card:first-child {
+    background-color: $teal;
+    color: rgba(255, 255, 255, .7);
+    z-index: 1;
+    transform: rotate(10deg);
+
+    @media (max-width: $md) {
+      transform: rotate(0);
+    }
+  }
+
+  .card:nth-child(2) {
+    background-color: $navy;
+    color: rgba(255, 255, 255, .7);
+    transform: rotate(350deg) translateY(-75px);
+    z-index: 2;
+
+    @media (max-width: $md) {
+      transform: rotate(0) translateY(0);
+    }
+  }
+
+  .card:last-child {
+    background-color: $goldenrod;
+    color: $black;
+    z-index: 3;
+  }
+}

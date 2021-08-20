@@ -14,6 +14,8 @@ class NavBar extends HTMLElement {
   }
 
   render() {
+    const logo = this?.navLogo ? `<a class="logo" href="/"><img src="${this.navLogo}" alt="logo"></a>` : '';
+
     let navItems = '';
     this.navMenu?.forEach((menu) => {
       navItems += `<li class="nav-item"><a href="#" class="nav-link">${menu}</a></li>`;
@@ -21,7 +23,7 @@ class NavBar extends HTMLElement {
 
     this.innerHTML = `
       <nav class="container">
-        <a class="logo" href="/"><img src="${this.navLogo}" alt="logo"></a>
+        ${logo}
         <button class="navbar-toggler"><span></span></button>
         <div class="collapse">
           <ul class="navbar-nav">${navItems}</ul>
