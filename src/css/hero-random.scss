@@ -1,0 +1,69 @@
+hero-random {
+  .container {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+
+    h1 {
+      @extend %butler-bold;
+      font-size: 12rem;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: $yellow;
+      line-height: .75;
+
+      @media (max-width: $sm) {
+        font-size: 4.8rem;
+      }
+    }
+
+    h2 {
+      @extend %moderat-regular;
+      font-size: 5rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 1rem;
+      margin-bottom: 0;
+
+      @media (max-width: $sm) {
+        font-size: 2.8rem;
+      }
+    }
+
+    h2::first-letter {
+      @extend %ogg-italic;
+    }
+
+    h3 {
+      @extend %moderat-regular;
+      text-transform: uppercase;
+      margin: 4rem 0 0 calc(50vw - 15px);
+      width: 16rem;
+
+      @media (max-width: $sm) {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+    }
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100vh;
+  }
+
+  h3 {
+    @extend %moderat-regular;
+    text-transform: uppercase;
+    margin-left: calc(50vw - 15px);
+    max-width: 25rem;
+
+    @media (max-width: $sm) {
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+    }
+  }
+}
