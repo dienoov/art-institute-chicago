@@ -18,7 +18,7 @@ class NavBar extends HTMLElement {
 
     let navItems = '';
     this.navMenu?.forEach((menu) => {
-      navItems += `<li class="nav-item"><a href="#" class="nav-link">${menu}</a></li>`;
+      navItems += `<li class="nav-item"><a href="${menu.link}" class="nav-link">${menu.name}</a></li>`;
     });
 
     this.innerHTML = `
