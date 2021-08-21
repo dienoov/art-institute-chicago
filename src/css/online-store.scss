@@ -13,7 +13,7 @@ online-store {
     max-width: 6ch;
     text-indent: -2ch;
 
-    @media (max-width: $md) {
+    @media (max-width: 992px) {
       font-size: 8rem;
       padding-left: 1ch;
     }
@@ -27,7 +27,7 @@ online-store {
     display: flex;
     max-width: $xl;
 
-    @media (max-width: $md) {
+    @media (max-width: 992px) {
       overflow-x: scroll;
     }
   }
@@ -47,7 +47,7 @@ product-card {
   }
 
   img {
-    width: 350px;
+    max-width: 350px;
     height: 350px;
     object-fit: cover;
     border: 2px solid rgba(0, 0, 0, .1);
@@ -65,7 +65,7 @@ product-card {
   &:nth-child(2) {
     transform: rotate(5deg) translateY(10px);
 
-    @media (max-width: $md) {
+    @media (max-width: 992px) {
       transform: rotate(0);
     }
   }

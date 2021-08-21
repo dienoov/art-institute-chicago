@@ -11,7 +11,7 @@ latest-exhibitions {
     margin-bottom: 2rem;
     word-break: break-all;
 
-    @media (max-width: $md) {
+    @media (max-width: 992px) {
       font-size: 8rem;
       width: 6ch;
       margin-right: auto;
@@ -33,8 +33,11 @@ latest-exhibitions {
     padding-left: 0;
     white-space: nowrap;
 
-    @media (max-width: $md) {
+    @media (max-width: 992px) {
       overflow-x: scroll;
+    }
+
+    @media (max-width: $md) {
       padding-bottom: 2rem;
     }
   }
@@ -47,7 +50,7 @@ latest-exhibitions {
     flex-basis: 0;
     white-space: normal;
 
-    @media (max-width: $md) {
+    @media (max-width: 992px) {
       min-width: 350px;
     }
 
@@ -79,7 +82,7 @@ latest-exhibitions {
       z-index: 1;
       transform: rotate(10deg);
 
-      @media (max-width: $md) {
+      @media (max-width: 992px) {
         transform: rotate(0);
       }
     }
@@ -90,7 +93,7 @@ latest-exhibitions {
       transform: rotate(350deg) translateY(-75px);
       z-index: 2;
 
-      @media (max-width: $md) {
+      @media (max-width: 992px) {
         transform: rotate(0) translateY(0);
       }
     }

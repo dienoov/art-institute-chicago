@@ -1,14 +1,11 @@
 footer {
+  padding-right: 15px;
+  padding-left: 15px;
+
   .container {
     border-top: 2px solid $black;
     max-width: $xl;
     padding: 75px 0 0;
-
-    @media (max-width: $md) {
-      margin-left: 15px;
-      margin-right: 15px;
-      width: auto;
-    }
 
     & > p {
       opacity: .5;
