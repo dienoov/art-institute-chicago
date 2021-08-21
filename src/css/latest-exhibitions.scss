@@ -9,13 +9,19 @@ latest-exhibitions {
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 2rem;
+    word-break: break-all;
 
     @media (max-width: $md) {
-      font-size: 6rem;
+      font-size: 8rem;
+      width: 6ch;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 1ch;
+      text-indent: -1ch;
     }
 
     @media (max-width: $sm) {
-      font-size: 3rem;
+      font-size: 4rem;
     }
   }
 
@@ -66,33 +72,33 @@ latest-exhibitions {
       margin-top: 2.5rem;
       margin-bottom: 1rem;
     }
-  }
 
-  .card:first-child {
-    background-color: $teal;
-    color: rgba(255, 255, 255, .7);
-    z-index: 1;
-    transform: rotate(10deg);
+    &:first-child {
+      background-color: $teal;
+      color: rgba(255, 255, 255, .7);
+      z-index: 1;
+      transform: rotate(10deg);
 
-    @media (max-width: $md) {
-      transform: rotate(0);
+      @media (max-width: $md) {
+        transform: rotate(0);
+      }
     }
-  }
 
-  .card:nth-child(2) {
-    background-color: $navy;
-    color: rgba(255, 255, 255, .7);
-    transform: rotate(350deg) translateY(-75px);
-    z-index: 2;
+    &:nth-child(2) {
+      background-color: $navy;
+      color: rgba(255, 255, 255, .7);
+      transform: rotate(350deg) translateY(-75px);
+      z-index: 2;
 
-    @media (max-width: $md) {
-      transform: rotate(0) translateY(0);
+      @media (max-width: $md) {
+        transform: rotate(0) translateY(0);
+      }
     }
-  }
 
-  .card:last-child {
-    background-color: $goldenrod;
-    color: $black;
-    z-index: 3;
+    &:last-child {
+      background-color: $goldenrod;
+      color: $black;
+      z-index: 3;
+    }
   }
 }

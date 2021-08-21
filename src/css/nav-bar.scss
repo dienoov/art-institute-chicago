@@ -65,11 +65,11 @@ nav-bar {
     .nav-link {
       text-transform: uppercase;
     }
-  }
-
-  .collapse.show {
-    @media (max-width: $lg) {
-      transform: translate(0);
+    
+    &.show {
+      @media (max-width: $lg) {
+        transform: translate(0);
+      }
     }
   }
 
@@ -100,24 +100,24 @@ nav-bar {
       content: "";
       transform: translateY(7px);
     }
-  }
 
-  .navbar-toggler.show {
-    @media (max-width: $lg) {
-      position: fixed;
-      top: 38px;
-      right: 15px;
+    &.show {
+      @media (max-width: $lg) {
+        position: fixed;
+        top: 38px;
+        right: 15px;
 
-      span {
-        height: 0;
-      }
+        span {
+          height: 0;
+        }
 
-      span::before {
-        transform: translateY(-3px) rotate(-45deg);
-      }
+        span::before {
+          transform: translateY(-3px) rotate(-45deg);
+        }
 
-      span::after {
-        transform: translateY(-6px) rotate(45deg);
+        span::after {
+          transform: translateY(-6px) rotate(45deg);
+        }
       }
     }
   }
@@ -129,8 +129,8 @@ header {
   background-color: white;
   z-index: 10;
   transition: top .3s ease-out;
-}
 
-header.hide {
-  top: -80px;
+  &.hide {
+    top: -80px;
+  }
 }

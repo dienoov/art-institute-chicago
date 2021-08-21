@@ -3,7 +3,10 @@ import './css/app.scss';
 import './components/nav-bar';
 import './components/hero-random';
 import './components/latest-exhibitions';
+import './components/product-card';
+import './components/online-store';
 
+import axios from 'axios';
 import logo from './images/logo.svg';
 
 const header = document.querySelector('header');
@@ -45,3 +48,8 @@ const heroRandom = document.querySelector('hero-random');
 heroRandom.heading = 'Art Institute';
 heroRandom.subheading = 'Chicago';
 heroRandom.slogan = 'One of the world’s major museums';
+
+const onlineStore = document.querySelector('online-store');
+axios.get('https://api.artic.edu/api/v1/products?limit=3').then(({ data }) => {
+  onlineStore.products = data.data;
+});
