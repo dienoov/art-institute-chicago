@@ -1,7 +1,7 @@
 import './layout';
-import '../components/hero-random';
-import '../components/latest-exhibitions';
-import '../components/online-store';
+import './components/hero-random';
+import './components/latest-exhibitions';
+import './components/online-store';
 
 import axios from 'axios';
 

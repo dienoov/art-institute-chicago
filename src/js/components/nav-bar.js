@@ -14,7 +14,7 @@ class NavBar extends HTMLElement {
   }
 
   render() {
-    const logo = this?.navLogo ? `<a class="logo" href="/"><img src="${this.navLogo}" alt="logo"></a>` : '';
+    const logo = this?.navLogo ? `<a class="logo" href="index.html"><img src="${this.navLogo}" alt="logo"></a>` : '';
 
     let navItems = '';
     this.navMenu?.forEach((menu) => {
@@ -27,7 +27,7 @@ class NavBar extends HTMLElement {
         <button class="navbar-toggler"><span></span></button>
         <div class="collapse">
           <ul class="navbar-nav">${navItems}</ul>
-          <form action="/search.html">
+          <form action="search.html">
             <input type="text" name="q" placeholder="Search Artworks" required>
             <button type="submit">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="14">

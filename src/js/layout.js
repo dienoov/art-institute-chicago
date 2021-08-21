@@ -1,6 +1,6 @@
 import 'regenerator-runtime';
 import '../css/app.scss';
-import '../components/nav-bar';
+import './components/nav-bar';
 
 import logo from '../images/logo.svg';
 
@@ -9,10 +9,10 @@ const navBar = header.querySelector('nav-bar');
 
 navBar.logo = logo;
 navBar.menu = [
-  { name: 'Home', link: '/' },
-  { name: 'Exhibitions', link: '/#exhibitions' },
+  { name: 'Home', link: 'index.html' },
+  { name: 'Exhibitions', link: 'index.html#exhibitions' },
   { name: 'About', link: '#' },
-  { name: 'Webstore', link: '/#webstore' },
+  { name: 'Webstore', link: 'index.html#webstore' },
 ];
 
 let prevY;
