@@ -2,10 +2,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/app.js',
+  entry: {
+    index: './src/js/index.js',
+    search: './src/js/search.js',
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -28,6 +31,13 @@ module.exports = {
       template: './src/views/index.pug',
       filename: 'index.html',
       favicon: './src/images/logo.svg',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/views/search.pug',
+      filename: 'search.html',
+      favicon: './src/images/logo.svg',
+      chunks: ['search'],
     }),
   ],
 };

@@ -1,3 +1,5 @@
+import './product-card';
+
 class OnlineStore extends HTMLElement {
   connectedCallback() {
     this.heading = document.createElement('h2');

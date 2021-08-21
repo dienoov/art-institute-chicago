@@ -1,0 +1,7 @@
+.artworks
+    each artwork in artworks
+        .card
+            img(src=artwork.image_url, alt="artwork")
+            h4=artwork.title
+            span=artwork.artist_display
+            span=artwork.date_display
