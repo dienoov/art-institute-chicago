@@ -7,6 +7,11 @@ nav-bar {
   a {
     text-decoration: none;
     color: inherit;
+    transition: color .15s ease-out;
+
+    &:hover {
+      color: $goldenrod;
+    }
   }
 
   .container {
@@ -65,7 +70,7 @@ nav-bar {
     .nav-link {
       text-transform: uppercase;
     }
-    
+
     &.show {
       @media (max-width: $lg) {
         transform: translate(0);

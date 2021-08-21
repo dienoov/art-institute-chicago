@@ -71,3 +71,8 @@ axios.get('//api.artic.edu/api/v1/products?limit=3')
   .then(({ data }) => {
     onlineStore.products = data.data;
   });
+
+const footer = document.querySelector('footer');
+const footerLogo = footer.querySelector('img');
+footerLogo.src = logo;
+footerLogo.alt = 'logo';
