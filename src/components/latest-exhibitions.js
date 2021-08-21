@@ -1,11 +1,6 @@
-import axios from 'axios';
-
 class LatestExhibitions extends HTMLElement {
-  async connectedCallback() {
-    const fields = ['id', 'title', 'description', 'image_id', 'image_url'].join(',');
-
-    this.latest = await axios.get(`//api.artic.edu/api/v1/exhibitions?fields=${fields}`);
-
+  set latest(latest) {
+    this.latestData = latest;
     this.render();
   }
 
@@ -19,11 +14,11 @@ class LatestExhibitions extends HTMLElement {
       'Amet commodi deleniti dolores, quae quaerat ratione suscipit? Error eum eveniet exercitationem illum nemo nulla optio quae quia quisquam rerum? Eum, voluptates?',
     ];
 
-    this.latest.data.data.forEach((exhibition) => {
+    this.latestData.data.forEach((exhibition) => {
       if (!(exhibition.image_id || exhibition.image_url)) return;
       if (i === 3) return;
 
-      const url = exhibition.image_url ?? `${this.latest.data.config.iiif_url}/${exhibition.image_id}/full/300,/0/default.jpg`;
+      const url = exhibition.image_url ?? `${this.latestData.config.iiif_url}/${exhibition.image_id}/full/300,/0/default.jpg`;
       const desc = `${(exhibition.description ?? lorem[i]).substr(0, 100)}...`;
 
       cards += `
